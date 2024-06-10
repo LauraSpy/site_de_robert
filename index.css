@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px 140px;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.search, .navbar button {
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.navbar button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 4px 10px rgb(206, 206, 206);
+    color: black;
+    background-color: #FFA068;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    background-color: none;
+    border: solid #FFA068 1px;
+    gap: 20px;
+    align-items: center;
+}
+
+.search input {
+    border: none;
+    font-size: 15px;
+}
+
+.search img {
+    width: 16px;
+    height: 16px;
+}
+
+#hero {
+    background-color: #06D6A0;
+    display: flex;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 120px;
+    padding-bottom: 0;
+    margin-bottom: -60px;
+    gap: 40px;
+}
+
+.hero_text {
+    width: 50%;
+}
+
+.hero_image {
+    width: 50%;
+    margin-left: -100px;
+}
+
+.hero_text button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 4px 10px rgb(206, 206, 206);
+    color: black;
+    background-color: #FFA068;
+    font-weight: bold;
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.hero_text h1{
+    font-size: 56px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2em;
+}
+
+.hero_text h1 > .bold {
+    background-image: url(./images/fond_h1.svg);
+    background-repeat: no-repeat;
+}
+
+.hero_text p {
+    margin: 1em 0;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.hero_text button {
+    margin: 30px 0px;
+}
+
+.qualirepar {
+    padding: 20px;
+    background-color: #D9FFF5;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    /*width: 550px;*/
+}
+
+.qualirepar img {
+    width: auto;
+    height: 68px;
+    z-index: -2;
+}
+
+.qualirepar_box {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.qualirepar_box h2 {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#chiffres {
+    background-color: white;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: -40px;
+    padding: 40px 80px;
+    border-radius: 16px;
+    border: none;
+    display: block;
+    position: relative;
+}
+
+.counter_list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter {
+    display: flex;
+    gap: 10px;
+}
+
+.counter p {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.number {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#categories{
+    background-color: #FEF1EF;
+    margin-top: -120px;
+    padding: 120px 140px 60px 140px;
+}
