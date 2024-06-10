@@ -336,7 +336,7 @@ header {
   }
 
 #info {
-    background-color: white;
+    background-color: #FEF1EF;
     display: flex;
     padding: 120px 140px;
     gap: 60px;
