@@ -20,6 +20,12 @@ header {
     width: 40px;
 }
 
+.logo h2 {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
 
 .navbar {
     display: flex;
@@ -32,6 +38,10 @@ header {
     display: flex;
     gap: 30px;
     align-items: center;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
 }
 
 .search, .navbar button {
@@ -47,6 +57,9 @@ header {
     color: black;
     background-color: #FFA068;
     font-weight: bold;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .search {
@@ -60,6 +73,9 @@ header {
 .search input {
     border: none;
     font-size: 15px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .search img {
@@ -97,6 +113,9 @@ header {
     font-weight: bold;
     padding: 6px 20px;
     border-radius: 8px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero_text h1{
@@ -164,6 +183,8 @@ header {
 
 .counter_list{
     display: flex;
+    gap: 20px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -284,3 +305,79 @@ header {
     justify-content: space-evenly;
 }
 
+#services {
+    background-color: #06D6A0;
+    padding: 40px 140px;
+}
+
+.service_part h2{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.services_list {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.service_box {
+    background-color: white;
+    border-radius: 8px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: calc(33% - 20px);
+}
+
+.logo_svg {
+    padding-left: 10px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+.service_box_text h3 {
+    color: #FFA068;
+    margin-bottom: 15px;
+}
+
+.boutique {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boutique h3{
+    font-weight: bold;
+}
+
+footer {
+    background-color: #D9FFF5;
+    display: flex;
+    padding: 120px 140px;
+    gap: 123px;
+    justify-content: space-around;
+}
+
+.footer_list {
+    gap: 30px;
+    line-height: 2.5em;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer_list .titre {
+    color: #06D6A0;
+    font-weight: bold;
+}
+
+.footer_list ul {
+    list-style-type: none;
+}
