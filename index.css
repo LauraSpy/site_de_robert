@@ -118,7 +118,7 @@ header {
     font-family: "Tomorrow", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .hero_text button {
@@ -131,13 +131,11 @@ header {
     border-radius: 16px;
     display: flex;
     flex-direction: row;
-    /*width: 550px;*/
 }
 
 .qualirepar img {
     width: auto;
     height: 68px;
-    z-index: -2;
 }
 
 .qualirepar_box {
@@ -172,6 +170,7 @@ header {
 .counter {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .counter p {
@@ -186,6 +185,7 @@ header {
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
+    background-image: url(./images/fond_h1.svg);
 }
 
 #categories{
@@ -227,5 +227,60 @@ header {
 
 .categorie h3 {
     margin: 15px;
+}
+
+#testimony {
+    background-color: #D9FFF5;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 35px;
+    padding: 120px 140px;
+}
+
+#info {
+    background-color: #FEF1EF;
+    display: flex;
+    padding: 120px 140px;
+    gap: 60px;
+}
+
+.info_text p {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%;
+}
+
+.info_text h2{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.info_text button {
+    width: 230px;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 4px 10px rgb(206, 206, 206);
+    color: black;
+    background-color: #FFA068;
+    font-weight: bold;
+    padding: 6px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.info_image img {
+    width: 450px;
+    height: auto;
+}
+
+.second_counter {
+    margin: 40px 100px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
