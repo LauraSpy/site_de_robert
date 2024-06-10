@@ -60,6 +60,13 @@ header {
     font-family: "Tomorrow", sans-serif;
     font-weight: 400;
     font-style: normal;
+    transition: ease-in-out 0.2s;
+}
+
+.navbar button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: all ease-in-out 0.2s;
 }
 
 .search {
@@ -142,6 +149,13 @@ header {
 
 .hero_text button {
     margin: 30px 0px;
+    transition: ease-in-out 0.2s;
+}
+
+.hero_text button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: all ease-in-out 0.2s;
 }
 
 .qualirepar {
