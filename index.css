@@ -289,8 +289,7 @@ header {
 }
 
 .carousel__nav {
-    padding: 20px 0;
-    gap: 1rem;
+    padding: 10px 0;
   }
 
   .carousel__indicator {
