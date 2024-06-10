@@ -166,7 +166,7 @@ header {
 
 .counter_list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .counter {
@@ -193,3 +193,39 @@ header {
     margin-top: -120px;
     padding: 120px 140px 60px 140px;
 }
+#categories h2 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    margin: 50px 0px 30px 0px;
+}
+
+.categorie_list {
+    display: flex;
+    gap: 40px;
+}
+
+.categorie {
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    border-radius: 16px;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.categorie img {
+    width: 320px;
+    height: 181px;
+    margin: 15px;
+}
+
+.categorie h3 {
+    margin: 15px;
+}
+
