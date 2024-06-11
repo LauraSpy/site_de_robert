@@ -813,3 +813,101 @@ footer {
     text-decoration: none;
     color: black;
 }
+
+
+/* FORMULAIRE DE CONTACT - page annexe */
+
+#contact{
+    background-color: #06D6A0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+
+#contact h1{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-bottom: 2rem;
+}
+
+#formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #ffffff; /* fond blanc */
+    padding: 40px;
+    border-radius: 16px; /* radius de 16px pour les bords */
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5); /* ajout d'un box-shadow */
+    width: 600px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#formulaire-contact label {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: #000000; /* couleur de police noire */
+}
+
+#formulaire-contact input, #formulaire-contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 1px black; 
+    border-radius: 16px; /* radius de 16px pour les bords */
+    background-color: #ffffff; /* fond blanc */
+    color: #000000; /* couleur de police noire */
+}
+
+.nom-prenom {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.nom-prenom label {
+    width: 45%;
+    margin-right: 10px;
+}
+
+.nom-prenom input {
+    width: 45%;
+}
+
+#formulaire-contact textarea {
+    height: 150px; /* hauteur de la zone de texte */
+    resize: vertical; /* autoriser la redimension verticale */
+}
+
+#formulaire-contact input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: #FFA068; /* bouton */
+    color: black;
+    padding: 10px 20px;
+    border: none; /* pas de bordure */
+    border-radius: 16px; /* radius de 16px pour les bords */
+    cursor: pointer; /* curseur pointer */
+    transition: all ease-in-out 0.2s;
+}
+
+#formulaire-contact input[type="submit"]:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+#formulaire-contact input[type="submit"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
