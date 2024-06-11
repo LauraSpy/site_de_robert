@@ -33,6 +33,15 @@ header {
     gap: 30px;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -65,8 +74,12 @@ header {
 
 .navbar button:hover {
     cursor: pointer;
-    transform: scale(105%);
-    transition: all ease-in-out 0.2s;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+.navbar button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .search {
@@ -125,6 +138,16 @@ header {
     font-style: normal;
 }
 
+.hero_text button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero_text button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+
 .hero_text h1{
     font-size: 56px;
     font-family: "Jost", sans-serif;
@@ -154,8 +177,13 @@ header {
 
 .hero_text button:hover {
     cursor: pointer;
-    transform: scale(105%);
-    transition: all ease-in-out 0.2s;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero_text button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .qualirepar {
@@ -252,6 +280,8 @@ header {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 30px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
 }
 
 .categorie img {
@@ -262,6 +292,21 @@ header {
 
 .categorie h3 {
     margin: 15px;
+}
+
+.categorie a{
+    text-decoration: none;
+    color: black;
+}
+
+.categorie:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.categorie:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #logo_brand{
@@ -342,8 +387,8 @@ header {
 .carousel_arrow {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 50%;
-    border: solid red 1px;
-    color: red;
+    border: solid #FFA068 1px;
+    color: #FFA068;
     margin: 1rem;
     padding: 5px;
     font-size: 15px;
@@ -357,15 +402,15 @@ header {
 }
 
 .carousel__indicator {
-border: 0;
-border-radius: 50%;
-width: 15px;
-height: 15px;
-background-color: #06D6A0;
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #06D6A0;
 }
 
 .carousel__indicator.current-slide {
-background: red;
+    background: #FFA068;
 }
 
 .testimony_box{
@@ -440,8 +485,13 @@ background: red;
 
 .info_text button:hover {
     cursor: pointer;
-    transform: scale(105%);
-    transition: all ease-in-out 0.2s;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info_text button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .info_image img {
@@ -500,6 +550,10 @@ background: red;
     margin-left: 20px;
 }
 
+.map_adresse .bold {
+    font-weight: bold;
+}
+
 .logo_svg {
     padding-left: 10px;
     padding-right: 20px;
@@ -544,4 +598,9 @@ footer {
 
 .footer_list ul {
     list-style-type: none;
+}
+
+.footer_list a {
+    text-decoration: none;
+    color: black;
 }
