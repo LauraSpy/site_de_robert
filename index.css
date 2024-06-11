@@ -328,9 +328,15 @@ header {
     align-items: flex-end;
 }
 
+.image_testimony {
+    margin-top: 3rem;
+    position: relative;
+    left: -18%;
+}
+
 .image_testimony img{
-    width: 630px;
-    height: auto;
+    width: auto;
+    height: 300px;
 }
 
 .carousel_arrow {
@@ -343,6 +349,7 @@ header {
     font-size: 15px;
     height: 30px;
     width: 30px;
+    cursor: pointer;
 }
 
 .carousel__nav {
@@ -355,7 +362,6 @@ header {
     width: 15px;
     height: 15px;
     background-color: #06D6A0;
-    cursor: pointer;
   }
 
   .carousel__indicator.current-slide {
@@ -368,6 +374,9 @@ header {
     font-size: 13px;
     padding: 40px;
     border-radius: 16px;
+    right: 15%;
+    width: calc(35% - 30px);
+    position: absolute;
   }
 
   .nom_avis {
@@ -424,6 +433,13 @@ header {
     padding: 6px 20px;
     border-radius: 8px;
     margin-top: 40px;
+    transition: ease-in-out 0.2s;
+}
+
+.info_text button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: all ease-in-out 0.2s;
 }
 
 .info_image img {
@@ -439,7 +455,7 @@ header {
 
 #services {
     background-color: #06D6A0;
-    padding: 40px 140px;
+    padding: 140px;
 }
 
 .service_part h2{
@@ -466,6 +482,20 @@ header {
     display: flex;
     align-items: center;
     width: calc(33% - 20px);
+}
+
+.map {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.map img {
+    width: 950px;
+    height: auto;
+}
+
+.map_adresse {
+    margin-left: 20px;
 }
 
 .logo_svg {
