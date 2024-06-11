@@ -12,6 +12,12 @@ header {
     padding: 20px 140px;
 }
 
+@media only screen and (max-width: 600px){
+    header {
+        padding: 20px 40px;
+    }
+}
+
 .logo {
     display: flex;
     float: left;
@@ -31,10 +37,26 @@ header {
     font-size: 15px;
 }
 
+@media only screen and (max-width: 600px){
+    .logo {
+        gap: none;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+}
+
 .navbar {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar {
+        gap: 10px;
+    }
 }
 
 .navbar a {
@@ -55,6 +77,12 @@ header {
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar ul {
+        display: none;
+    }
 }
 
 .search, .navbar button {
@@ -107,6 +135,12 @@ header {
     font-style: normal;
 }
 
+@media only screen and (max-width: 600px){
+    .search input {
+        display: none;
+    }
+}
+
 .search img {
     width: 16px;
     height: 16px;
@@ -130,6 +164,20 @@ header {
 .hero_image {
     width: 50%;
     margin-left: -100px;
+}
+
+@media only screen and (max-width: 600px){
+    #hero {
+        padding: 5rem 3rem;
+    }
+
+    .hero_text{
+        width: 100%;
+    }
+
+    .hero_image{
+        display: none;
+    }
 }
 
 .hero_text button {
