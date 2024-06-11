@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     background-color: white;
     padding: 20px 140px;
@@ -106,9 +110,9 @@ header {
 #hero {
     background-color: #06D6A0;
     display: flex;
-    padding-left: 140px;
-    padding-right: 140px;
-    padding-top: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 110px;
     padding-bottom: 0;
     margin-bottom: -60px;
     gap: 40px;
@@ -254,7 +258,7 @@ header {
 #categories{
     background-color: #FEF1EF;
     margin-top: -120px;
-    padding: 120px 140px 60px 140px;
+    padding: 120px 120px 60px 120px;
 }
 #categories h2 {
     font-family: "Jost", sans-serif;
@@ -271,8 +275,8 @@ header {
 }
 
 .categorie {
-    width: 360px;
-    height: 360px;
+    width: 350px;
+    height: 350px;
     background-color: white;
     border-radius: 16px;
     text-align: center;
@@ -358,7 +362,7 @@ header {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 35px;
-    padding: 120px 140px;
+    padding: 100px 120px;
 }
 
 .testimony_avis {
@@ -461,7 +465,7 @@ header {
 #info {
     background-color: #FEF1EF;
     display: flex;
-    padding: 120px 140px;
+    padding: 100px 120px;
     gap: 60px;
 }
 
@@ -487,6 +491,9 @@ header {
     box-shadow: 2px 4px 10px rgb(206, 206, 206);
     color: black;
     background-color: #FFA068;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: bold;
     padding: 6px 20px;
     border-radius: 8px;
@@ -602,7 +609,7 @@ header {
 footer {
     background-color: #D9FFF5;
     display: flex;
-    padding: 120px 140px;
+    padding: 100px 120px;
     gap: 123px;
     justify-content: space-around;
 }
