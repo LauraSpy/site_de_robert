@@ -264,6 +264,49 @@ header {
     margin: 15px;
 }
 
+#logo_brand{
+    margin: 60px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%; 
+    height: auto;
+    border: none;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    width: calc(100% + 40px * 12); /* ajustez ce nombre en fonction du nombre d'images */
+    animation: scroll 10s linear infinite;
+}
+
+.carousel-container img {
+    width: 165px;
+    height: 90px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.carousel-container img:last-child {
+    margin-right: 0; /* enlever la marge droite de la dernière image */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-165px * 3)); /* ajustez ce nombre en fonction du nombre d'images */
+    }
+}
+
 #testimony {
     background-color: #D9FFF5;
     font-family: "Jost", sans-serif;
