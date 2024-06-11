@@ -369,35 +369,37 @@ background: red;
 }
 
 .testimony_box{
-border: none;
-background-color: white;
-font-size: 13px;
-padding: 40px;
-border-radius: 16px;
-right: 15%;
-width: calc(35% - 30px);
-position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 13px;
+    padding: 40px;
+    border-radius: 16px;
+    right: 15%;
+    width: calc(35% - 30px);
+    position: absolute;
+    height: 300px; /* Définir une hauteur fixe */
+    overflow: hidden; /* Cacher tout débordement */
 }
 
 .nom_avis {
-padding: 10px 0;
-border-top: solid #06D6A0;
-color: #06D6A0;
-text-align: left;
-font-family: "Tomorrow", sans-serif;
-font-weight: 400;
-font-style: normal;
+    padding: 10px 0;
+    border-top: solid #06D6A0;
+    color: #06D6A0;
+    text-align: left;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .avis_text h3, .avis_text p{
-margin-bottom: 15px;
-font-family: "Tomorrow", sans-serif;
-font-weight: 400;
-font-style: normal;
+    margin-bottom: 15px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .avis_text h3 {
-font-weight: bold;
+    font-weight: bold;
 }
 
 #info {
