@@ -63,6 +63,7 @@ const problematiqueText = document.getElementById('problematiqueText');
 const reparationText = document.getElementById('reparationText');
 const resultatText = document.getElementById('resultatText');
 const nomAvis = document.getElementById('nomAvis');
+const images = document.querySelectorAll('.image_testimony img');
 
 function updateReview() {
     const review = reviews[currentReviewIndex];
@@ -75,6 +76,11 @@ function updateReview() {
     const indicators = document.querySelectorAll('.carousel__indicator');
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle('current-slide', index === currentReviewIndex);
+    });
+
+    // Mettre à jour l'image
+    images.forEach((image, index) => {
+        image.classList.toggle('hidden', index !== currentReviewIndex);
     });
 }
 

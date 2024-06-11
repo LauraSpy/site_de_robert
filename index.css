@@ -379,9 +379,19 @@ header {
     left: -18%;
 }
 
-.image_testimony img{
-    width: auto;
-    height: 300px;
+.image_testimony img {
+    width: 100%; /* largeur à 100% du conteneur */
+    height: 300px; /* hauteur fixe à 300px */
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.image_testimony > .image_case {
+    width: 530px;
+    height: auto;
 }
 
 .carousel_arrow {
@@ -423,6 +433,7 @@ header {
     width: calc(35% - 30px);
     position: absolute;
     height: 300px; /* Définir une hauteur fixe */
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden; /* Cacher tout débordement */
 }
 
