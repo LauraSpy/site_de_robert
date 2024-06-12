@@ -709,7 +709,7 @@ header {
 
 @media only screen and (max-width: 600px){
     .info_image img{
-        width: 20em;
+        width: 15em;
         height: auto;
     }
 }
