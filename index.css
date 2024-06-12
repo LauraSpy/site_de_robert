@@ -12,20 +12,15 @@ header {
     padding: 20px 140px;
     position: fixed;
     z-index: 5;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 600px){
     header {
         padding: 20px 40px;
     }
-}
-
-.logo {
-    display: flex;
-    float: left;
-    align-items: center;
-    gap: 10px;
 }
 
 .logo img {
@@ -44,6 +39,7 @@ header {
     text-decoration: none;
     color: black;
     display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 600px){
@@ -58,13 +54,15 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
     gap: 30px;
+    width: 60rem;
 }
 
 @media only screen and (max-width: 600px){
     .navbar {
         gap: 10px;
+        justify-content: flex-end;
+        padding-right: 8rem;
     }
 }
 
@@ -178,6 +176,7 @@ header {
 @media only screen and (max-width: 600px){
     #hero {
         padding: 5rem 3rem;
+        padding-top: 160px;
     }
 
     .hero_text{
@@ -350,7 +349,7 @@ header {
 
 @media only screen and (max-width: 600px){
     #categories {
-        padding: 5em;
+        padding: 6em 3em;
     }
 }
 
@@ -374,7 +373,7 @@ header {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 30px;
+    font-size: 1.5em;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
     transition: all 0.2s;
 }
@@ -392,6 +391,22 @@ header {
 .categorie a{
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .categorie{
+        width: auto;
+        height: 280px;
+    }
+
+    .categorie img {
+        height: 150px;
+        width: auto;
+    }
+
+    .categorie h3 {
+        margin: 5px 1px;
+    }
 }
 
 .categorie:hover{
@@ -452,7 +467,7 @@ header {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1.9em;
+    font-size: 1.6em;
     padding: 100px 120px;
 }
 
@@ -694,7 +709,7 @@ header {
 
 @media only screen and (max-width: 600px){
     .info_image img{
-        width: 22em;
+        width: 20em;
         height: auto;
     }
 }
