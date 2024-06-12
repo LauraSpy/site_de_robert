@@ -61,7 +61,7 @@ header {
 @media only screen and (max-width: 600px){
     .navbar {
         gap: 10px;
-        justify-content: flex-end;
+        margin-left: 3rem;
         padding-right: 8rem;
     }
 }
@@ -832,6 +832,12 @@ header {
 
 .boutique h3{
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px){
+    .map{
+        display: none;
+    }
 }
 
 footer {
