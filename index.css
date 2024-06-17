@@ -152,7 +152,6 @@ header {
     padding-bottom: 0;
     margin-bottom: -3%;
     gap: 10%;
-    width: auto;
 }
 
 .hero_text {
@@ -1001,6 +1000,7 @@ footer {
         margin-left: -40%;
         margin-top: 10%;
         transform: scale(120%);
+        overflow-x: hidden;
     }
 
     .qualirepar {
