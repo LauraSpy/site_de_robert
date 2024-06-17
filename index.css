@@ -256,7 +256,7 @@ header {
     }
 
     .hero_image {
-        margin-left: -50%;
+        margin-left: -40%;
         margin-top: 10%;
         transform: scale(120%);
     }
@@ -379,7 +379,16 @@ header {
     position: relative;
 }
 
-.counter_list{
+@media only screen and (max-width: 800px){
+    #chiffres{
+        overflow: hidden;
+        margin: 0;
+        padding: 20px 50px;
+        width: 100vmax;
+    }
+}
+
+.counter_list {
     display: flex;
     gap: 20px;
     width: 100%;
@@ -390,6 +399,29 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .counter_list {
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .counter {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .counter_list{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .counter {
+        flex-direction: column;
+    }
 }
 
 .counter p {
@@ -405,34 +437,6 @@ header {
     font-style: normal;
     font-size: 50px;
     background-image: url(./images/fond_h1.svg);
-}
-
-@media only screen and (max-width: 800px){
-    #chiffres{
-        overflow: hidden;
-        margin: 0;
-        padding: 20px 50px;
-    }
-
-    .counter_list {
-        justify-content: flex-start;
-        gap: 10%;
-    }
-
-    .counter {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .counter_list{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .counter {
-        flex-direction: column;
-    }
 }
 
 
