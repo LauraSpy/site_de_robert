@@ -965,8 +965,13 @@ footer {
 
 @media only screen and (max-width: 400px){
     /* PART : HEADER */    
+    * {
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
     header {
-        width: 100%;
+        width: 100vmax;
     }
 
     .navbar {
@@ -1000,7 +1005,6 @@ footer {
         margin-left: -40%;
         margin-top: 10%;
         transform: scale(120%);
-        overflow-x: hidden;
     }
 
     .qualirepar {
