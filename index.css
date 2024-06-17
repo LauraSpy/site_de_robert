@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+    width: 100vmax;
 }
 
 /** PART : HEADER **/
@@ -14,7 +15,8 @@ header {
     padding: 2% 5%;
     position: fixed;
     z-index: 5;
-    width: 100%;
+    left: 0;
+    right: 0;
     display: flex;
 }
 
@@ -40,10 +42,9 @@ header {
 /* Style for navigation on full-screen */
 .navbar {
     display: flex;
-    width: 100vmax;
+    width: 100rem;
     justify-content: flex-end;
     gap: 2%;
-    margin-right: 10%;
     align-items: center;
 }
 
@@ -149,9 +150,9 @@ header {
     padding-right: 10%;
     padding-top: 14%;
     padding-bottom: 0;
-    margin-bottom: -6%;
-    gap: 3%;
-    width: 100%;
+    margin-bottom: -3%;
+    gap: 10%;
+    width: auto;
 }
 
 .hero_text {
@@ -285,6 +286,8 @@ header {
     border: none;
     display: block;
     position: relative;
+    left: 0;
+    right: 0;
 }
 
 .counter_list {
@@ -446,6 +449,8 @@ header {
     font-style: normal;
     font-size: 1.6em;
     padding: 100px 120px;
+    left: 0;
+    right: 0;
 }
 
 .testimony_avis {
@@ -524,7 +529,7 @@ header {
     right: 15%;
     width: calc(35% - 30px);
     position: absolute;
-    height: 300px; /* Définir une hauteur fixe */
+    height: 400px; /* Définir une hauteur fixe */
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden; /* Cacher tout débordement */
 }
@@ -748,6 +753,7 @@ footer {
     background-color: #D9FFF5;
     display: flex;
     padding: 100px 120px;
+    margin: auto;
     gap: 123px;
     justify-content: space-around;
 }
@@ -781,7 +787,6 @@ footer {
     /* PART : HEADER */
     header {
         padding: 20px 40px;
-        width: 100%;
     }
 
     .logo {
@@ -826,21 +831,21 @@ footer {
 
     /* PART : HERO */
     #hero {
-        padding-top: 160px;
+        padding-top: 20%;
         flex-direction: column;
-        width: 100vmax;
     }
 
     .hero_text{
-        width: 100%;
+        width: 100vmax;
     }
 
     .hero_image {
-        margin-left: -10%;
+        margin-top: 5%;
     }
 
     .qualirepar {
         width: 50%;
+        height: auto;
     }
 
     /* PART : NUMBERS */
@@ -864,12 +869,13 @@ footer {
     }
 
     .categorie{
-        width: auto;
+        width: 320px;
         height: 280px;
     }
 
     .categorie_list {
         flex-direction: column;
+        align-items: center;
     }
 
     .categorie img {
@@ -883,7 +889,7 @@ footer {
 
     /* PART : TESTIMONY */
     #testimony{
-        height: 100vh; /* ajust the height */
+        height: 80vh; /* ajust the height */
     }
 
     #testimony h2 {
@@ -891,7 +897,8 @@ footer {
     }
 
     .testimony_avis {
-        height: 80vh;
+        height: 50vh;
+        width: 50vmax;
         flex-direction: column; /* the element goes on top */
     }
 
@@ -900,6 +907,7 @@ footer {
         flex-direction: column-reverse; /* make sur the button goes at the bottom */
         align-items: center;
         height: 100%;
+        width: 90vmax;
     }
 
     .image_testimony img {
@@ -921,12 +929,12 @@ footer {
     }
 
     .info_text {
-        width: 90%;
+        width: 80%;
     }
 
     .info_image img{
         height: auto;
-        width: 90%; /* ajust the scale of the image */
+        width: 80%; /* ajust the scale of the image */
     }
 
     /* PART : SERVICES */
@@ -957,10 +965,9 @@ footer {
 /* Media query for MOBILE screens */
 
 @media only screen and (max-width: 400px){
-    /* PART : HEADER */
+    /* PART : HEADER */    
     header {
-        width: 60%;
-        overflow-x: hidden;
+        width: 100%;
     }
 
     .navbar {
@@ -977,6 +984,7 @@ footer {
     #hero {
         padding-top: 160px;
         padding-left: 15%;
+        width: 100%;
     }
 
     .hero_text {
