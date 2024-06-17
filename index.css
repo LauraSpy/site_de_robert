@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
 }
 
+/** PART : HEADER **/
+
 header {
     background-color: white;
     padding: 2% 5%;
@@ -35,6 +37,7 @@ header {
     align-items: center;
 }
 
+/* Style for navigation on full-screen */
 .navbar {
     display: flex;
     width: 100vmax;
@@ -42,14 +45,6 @@ header {
     gap: 2%;
     margin-right: 10%;
     align-items: center;
-}
-
-@media only screen and (max-width: 400px){
-    .navbar {
-        gap: 10px;
-        margin-left: 3rem;
-        padding-right: 8rem;
-    }
 }
 
 /* Styles for the menu - burger - icon */
@@ -77,14 +72,13 @@ header {
     font-size: 13px;
 }
 
-
 .navbar a {
-    text-decoration: none;
+    text-decoration: none; /* no under-line on the links */
     color: black;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* add the under-line on hover */
 }
 
 .search, .navbar button {
@@ -92,6 +86,7 @@ header {
     border-radius: 8px;
 }
 
+/* styles the button */
 .navbar button {
     width: 160px;
     height: 40px;
@@ -105,7 +100,8 @@ header {
     font-style: normal;
     transition: ease-in-out 0.2s;
 }
-
+ 
+/* style the button on hover */
 .navbar button:hover {
     cursor: pointer;
     transform: translateY(-3px);
@@ -113,18 +109,13 @@ header {
 }
 
 .navbar button a:hover{
-    text-decoration: none;
+    text-decoration: none; /* no under-line on the link */
 }
 
+/* while the cursor is on */
 .navbar button:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
-}
-
-@media only screen and (max-width: 800px){
-    .navbar  button {
-        display: none;
-    }
 }
 
 .search {
@@ -143,16 +134,13 @@ header {
     font-style: normal;
 }
 
-@media only screen and (max-width: 400px){
-    .search {
-        display: none;
-    }
-}
-
 .search img {
     width: 16px;
     height: 16px;
 }
+
+
+/** PART : HERO **/
 
 #hero {
     background-color: #06D6A0;
@@ -170,56 +158,18 @@ header {
     width: 50%;
 }
 
+/* scale the image */
 .hero_image {
     width: 50%;
     height: auto;
     margin-left: -20%;
 }
 
-
+/* correction for smaller full-screen */
 @media only screen and (max-width: 1000px){
     .hero_image {
         width: 40%;
         margin-left: -10%;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    #hero {
-        padding-top: 160px;
-        flex-direction: column;
-        width: 100vmax;
-    }
-
-    .hero_text{
-        width: 100%;
-    }
-
-    .hero_image {
-        margin-left: -10%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    #hero {
-        padding-top: 160px;
-        padding-left: 15%;
-    }
-
-    .hero_text {
-        width: 35%;
-        font-size: smaller;
-    }
-
-    .hero_text .bold {
-        font-size: larger;
-        font-weight: bold;
-    }
-
-    .hero_image {
-        margin-left: -40%;
-        margin-top: 10%;
-        transform: scale(120%);
     }
 }
 
@@ -248,6 +198,7 @@ header {
     text-decoration: none;
 }
 
+/* while the cursor is on */
 .hero_text button:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
@@ -262,6 +213,7 @@ header {
     line-height: 1.2em;
 }
 
+/* add "weight : bold" to a part of the title */
 .hero_text h1 > .bold {
     background-image: url(./images/fond_h1.svg);
     background-repeat: no-repeat;
@@ -280,17 +232,20 @@ header {
     transition: ease-in-out 0.2s;
 }
 
+/* when the cursor hovers */
 .hero_text button:hover {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* while the cursor is on */
 .hero_text button:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* the qualirepar label part */
 .qualirepar {
     padding: 3%;
     background-color: #D9FFF5;
@@ -317,17 +272,8 @@ header {
     font-style: normal;
 }
 
-@media only screen and (max-width: 800px){
-    .qualirepar {
-        width: 50%;
-    }
-}
 
-@media only screen and (max-width: 400px){
-    .qualirepar {
-        display: none;
-    }
-}
+/** PART : NUMBERS **/
 
 #chiffres {
     background-color: white;
@@ -341,13 +287,6 @@ header {
     position: relative;
 }
 
-@media only screen and (max-width: 800px){
-    #chiffres{
-        margin: 0;
-        padding: 20px 50px;
-    }
-}
-
 .counter_list {
     display: flex;
     gap: 20px;
@@ -359,28 +298,6 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-@media only screen and (max-width: 800px) {
-    .counter_list {
-        margin: auto;
-        justify-content: space-evenly;
-    }
-
-    .counter {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .counter_list{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .counter {
-        flex-direction: column;
-    }
 }
 
 .counter p {
@@ -399,6 +316,8 @@ header {
 }
 
 
+/** PART : CATEGORIES **/
+
 #categories{
     background-color: #FEF1EF;
     margin-top: -120px;
@@ -414,21 +333,9 @@ header {
     margin: 50px 0px 30px 0px;
 }
 
-@media only screen and (max-width: 600px){
-    #categories {
-        padding: 6em 3em;
-    }
-}
-
 .categorie_list {
     display: flex;
     gap: 40px;
-}
-
-@media only screen and (max-width: 600px){
-    .categorie_list{
-        flex-direction: column;
-    }
 }
 
 .categorie {
@@ -445,6 +352,7 @@ header {
     transition: all 0.2s;
 }
 
+/* scale the image */
 .categorie img {
     width: 320px;
     height: 181px;
@@ -460,35 +368,20 @@ header {
     color: black;
 }
 
-@media only screen and (max-width: 800px){
-    .categorie{
-        width: auto;
-        height: 280px;
-    }
-
-    .categorie_list {
-        flex-direction: column;
-    }
-
-    .categorie img {
-        height: 150px;
-        width: auto;
-    }
-
-    .categorie h3 {
-        margin: 5px 1px;
-    }
-}
-
+/* when the cursor hovers */
 .categorie:hover{
     transform: translateY(-3px);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* while the cursor is on */
 .categorie:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
+
+
+/** PART : BRAND **/
 
 #logo_brand{
     margin: 60px 30px;
@@ -508,17 +401,17 @@ header {
 }
 
 .carousel {
-    overflow: hidden;
+    overflow: hidden; /* the logo will scroll and disappear when reach the end of the block */
     width: 100%; 
     height: auto;
     border: none;
-    position: relative;
+    position: relative; 
 }
 
 .carousel-container {
     display: flex;
     width: calc(100% + 40px * 12); /* ajustez ce nombre en fonction du nombre d'images */
-    animation: scroll 10s linear infinite;
+    animation: scroll 10s linear infinite; /* automatic animation scroll */
 }
 
 .carousel-container img {
@@ -533,6 +426,7 @@ header {
     margin-right: 0; /* enlever la marge droite de la dernière image */
 }
 
+/* width of the automatic animation scroll */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -541,6 +435,9 @@ header {
         transform: translateX(calc(-165px * 3)); /* ajustez ce nombre en fonction du nombre d'images */
     }
 }
+
+
+/** PART : TESTIMONY **/
 
 #testimony {
     background-color: #D9FFF5;
@@ -551,64 +448,26 @@ header {
     padding: 100px 120px;
 }
 
-@media only screen and (max-width: 800px){
-    #testimony{
-        height: 100vh;
-    }
-
-    #testimony h2 {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    #testimony{
-        display: none;
-    }
-}
-
 .testimony_avis {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.button_dot {
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-}
-
 .image_testimony {
     margin-top: 3rem;
-    position: relative;
-    left: -18%;
+    position: relative; /* make sure the image stayed behind the testimony text-box */
+    left: -18%; /* position the image on the left of the testimony text-box */
 }
 
+/* style the image of the testimony */
 .image_testimony img {
     width: 100%; /* largeur à 100% du conteneur */
     height: 300px; /* hauteur fixe à 300px */
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 800px){
-    .testimony_avis {
-        height: 80vh;
-        flex-direction: column;
-    }
-
-    .image_testimony {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        height: 100%;
-    }
-
-    .image_testimony img {
-        display: none;
-    }
-}
-
+/* class to hide the other text-testimony, to be called in JS */
 .hidden {
     display: none;
 }
@@ -616,6 +475,13 @@ header {
 .image_testimony > .image_case {
     width: 530px;
     height: auto;
+}
+
+/* style for the button carrousel */
+.button_dot {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
 }
 
 .carousel_arrow {
@@ -643,10 +509,12 @@ header {
     background-color: #06D6A0;
 }
 
+/* style the button when it's currently active */
 .carousel__indicator.current-slide {
     background: #FFA068;
 }
 
+/* the part where the text of each testimony appears */
 .testimony_box{
     border: none;
     background-color: white;
@@ -659,16 +527,6 @@ header {
     height: 300px; /* Définir une hauteur fixe */
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden; /* Cacher tout débordement */
-}
-
-@media only screen and (max-width: 800px){
-    .testimony_box{
-        display: flex;
-        flex-direction: column;
-        right: auto;
-        width: 50%;
-        overflow-y: scroll;
-    }
 }
 
 .nom_avis {
@@ -692,6 +550,9 @@ header {
     font-weight: bold;
 }
 
+
+/** PART : INFORMATION **/
+
 #info {
     background-color: #FEF1EF;
     display: flex;
@@ -699,30 +560,11 @@ header {
     gap: 60px;
 }
 
-@media only screen and (max-width: 800px){
-    #info{
-        padding: 5em;
-        flex-direction: column;
-    }
-}
-
 .info_text p {
     font-family: "Tomorrow", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 125%;
-}
-
-@media only screen and (max-width: 800px){
-    .info_text {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .mobile_first {
-        display: none;
-    }
 }
 
 .info_text h2{
@@ -733,6 +575,7 @@ header {
     margin-bottom: 30px;
 }
 
+/* style for the CTA */
 .info_text button {
     width: 230px;
     height: 40px;
@@ -750,41 +593,46 @@ header {
     transition: ease-in-out 0.2s;
 }
 
+/* style for the CTA on hover */
 .info_text button:hover {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* style for the CTA while the cursos is on the button */
 .info_text button:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* tooltip is used to add a pop-up on hover */
 .tooltip {
     position: relative;
     display: inline-block;
   }
-  
+
+/* placement for the popup, but stay invisible while the cursor is not hovering */
 .tooltip::after {
-    content: attr(data-tooltip);
-    position: absolute;
+    content: attr(data-tooltip); /* retrieve the data inside the HTML */
+    position: absolute; /* absolute make sure the popup appears on top of the others elements */
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* place the popup at the bottom of the button place */
     background-color: #333;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
+    visibility: hidden; /* make it's not visible until there's no hover */
+    opacity: 0; /* make the popup at zero opacity first */
+    transition: opacity 0.3s; /* add a transition for the popup appartion */
 }
-  
+
+/* popup appears while hovering */
 .tooltip:hover::after {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible; /* appears on hover on the button */
+    opacity: 1; /* make the opacity clear after the transition */
 }
 
 .info_image img {
@@ -792,42 +640,18 @@ header {
     height: auto;
 }
 
-@media only screen and (max-width: 800px){
-    .info_image img{
-        height: auto;
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .info_image img{
-        width: 100%;
-        height: auto;
-    }
-}
-
-
 .second_counter {
     margin: 40px 100px;
     display: flex;
     justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 400px){
-   .second_counter {
-    display: none;
-   }
-}
+
+/** PART : SERVICES **/
 
 #services {
     background-color: #06D6A0;
     padding: 140px;
-}
-
-@media only screen and (max-width: 800px){
-    #services{
-        padding: 5em 3em;
-    }
 }
 
 .service_part h2{
@@ -838,18 +662,14 @@ header {
     margin-bottom: 20px;
 }
 
+/* Part to list each box for each services */
 .services_list {
     display: flex;
     gap: 40px;
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 800px){
-    .services_list{
-        flex-direction: column;
-    }
-}
-
+/* describe each box */
 .service_box {
     background-color: white;
     border-radius: 8px;
@@ -864,27 +684,47 @@ header {
     transition: ease-in-out 0.2s;
 }
 
+/* add a link on the box for the contact form */
 .service_box a{
     text-decoration: none;
     color: black;
     display: flex;
 }
 
-@media only screen and (max-width: 800px){
-    .service_box{
-        width: calc(80% - 20px);
-    }
-}
-
+/* effect when the cursos is hovering the box */
 .service_box:hover {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* effect when the cursor stays on the box*/
 .service_box:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.service_box_text h3 {
+    color: #FFA068;
+    margin-bottom: 15px;
+}
+
+/* scale the svg logo for each box */
+.logo_svg {
+    padding-left: 10px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+/* Localisation of the boutique with a map, adresse, and schedules */
+.boutique {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boutique h3{
+    font-weight: bold;
 }
 
 .map {
@@ -897,40 +737,17 @@ header {
     height: auto;
 }
 
-@media only screen and (max-width: 800px){
-    .boutique {
-        display: none;
-    }
-}
-
 .map_adresse {
     margin-left: 20px;
 }
 
+/* ajust the title "Adresse" and "Horaires" to bold */
 .map_adresse .bold {
     font-weight: bold;
 }
 
-.logo_svg {
-    padding-left: 10px;
-    padding-right: 20px;
-    align-self: center;
-}
 
-.service_box_text h3 {
-    color: #FFA068;
-    margin-bottom: 15px;
-}
-
-.boutique {
-    font-family: "Tomorrow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.boutique h3{
-    font-weight: bold;
-}
+/* PART : FOOTER */
 
 footer {
     background-color: #D9FFF5;
@@ -938,13 +755,6 @@ footer {
     padding: 100px 120px;
     gap: 123px;
     justify-content: space-around;
-}
-
-@media only screen and (max-width: 800px){
-    footer {
-        flex-direction: column;
-        padding: 50px 60px;
-    }
 }
 
 .footer_list {
@@ -973,6 +783,7 @@ footer {
 /* Media query for smaller screens */
 
 @media only screen and (max-width: 800px) {
+    /* PART : HEADER */
     header {
         padding: 20px 40px;
         width: 100%;
@@ -990,6 +801,10 @@ footer {
         gap: 10px;
         margin-right: 10%;
         justify-content: flex-end;
+    }
+
+    .navbar  button {
+        display: none;
     }
 
     .menu-icon {
@@ -1013,7 +828,209 @@ footer {
     .menu.active {
         display: flex; /* Show the menu when active */
     }
+
+    /* PART : HERO */
+    #hero {
+        padding-top: 160px;
+        flex-direction: column;
+        width: 100vmax;
+    }
+
+    .hero_text{
+        width: 100%;
+    }
+
+    .hero_image {
+        margin-left: -10%;
+    }
+
+    .qualirepar {
+        width: 50%;
+    }
+
+    /* PART : NUMBERS */
+    #chiffres{
+        margin: 0;
+        padding: 20px 50px;
+    }
+
+    .counter_list {
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .counter {
+        flex-direction: column;
+    }
+
+    /* PART : CATEGORIES */
+    #categories {
+        padding: 6em 3em;
+    }
+
+    .categorie{
+        width: auto;
+        height: 280px;
+    }
+
+    .categorie_list {
+        flex-direction: column;
+    }
+
+    .categorie img {
+        height: 150px;
+        width: auto;
+    }
+
+    .categorie h3 {
+        margin: 5px 1px;
+    }
+
+    /* PART : TESTIMONY */
+    #testimony{
+        height: 100vh; /* ajust the height */
+    }
+
+    #testimony h2 {
+        width: 70%;
+    }
+
+    .testimony_avis {
+        height: 80vh;
+        flex-direction: column; /* the element goes on top */
+    }
+
+    .image_testimony {
+        display: flex;
+        flex-direction: column-reverse; /* make sur the button goes at the bottom */
+        align-items: center;
+        height: 100%;
+    }
+
+    .image_testimony img {
+        display: none; /* image not included in the smaller screen */
+    }
+
+    .testimony_box{
+        display: flex;
+        flex-direction: column;
+        right: auto; 
+        width: 50%;
+        overflow-y: scroll; /* if the box is a bit too short, the scrool is available */
+    }
+
+    /* PART : INFORMATION */
+    #info{
+        padding: 5em;
+        flex-direction: column; /* make sure the image goes at the bottom */
+    }
+
+    .info_text {
+        width: 90%;
+    }
+
+    .info_image img{
+        height: auto;
+        width: 90%; /* ajust the scale of the image */
+    }
+
+    /* PART : SERVICES */
+    #services{
+        padding: 5em 3em; /* ajust the margins */
+    }
+
+    .services_list{
+        flex-direction: column; /* place on a column in place of a row */
+    }
+
+    .service_box{
+        width: calc(80% - 20px); /* calculate the width with percentage + a gap, for each box */
+    }
+
+    /* PART : BOUTIQUE */
+    .boutique {
+        display: none; /* not included on smaller screens */
+    }
+
+    /* PART : FOOTER */
+    footer {
+        flex-direction: column; /* ajust each column on top of each others */
+        padding: 50px 60px; /* ajust the interior margins */
+    }
 }
+
+/* Media query for MOBILE screens */
+
+@media only screen and (max-width: 400px){
+    /* PART : HEADER */
+    .navbar {
+        gap: 10px;
+        margin-left: 3rem;
+        padding-right: 8rem;
+    }
+
+    .search {
+        display: none;
+    }
+
+    /* PART : HERO */
+    #hero {
+        padding-top: 160px;
+        padding-left: 15%;
+    }
+
+    .hero_text {
+        width: 35%;
+        font-size: smaller;
+    }
+
+    .hero_text .bold {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .hero_image {
+        margin-left: -40%;
+        margin-top: 10%;
+        transform: scale(120%);
+    }
+
+    .qualirepar {
+        display: none;
+    }
+
+    /* PART : NUMBERS */
+    .counter_list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .counter {
+        flex-direction: column;
+    }
+
+    /* PART : TESTIMONY */
+    #testimony{
+        display: none; /* not included in the Mobile version */
+    }
+
+    /* PART : INFORMATION */
+    .mobile_first {
+        display: none; /* withdraw the last 2 paragraphs on the mobile version */
+    }
+
+    .info_image img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* PART : Second numbers */
+    .second_counter {
+        display: none; /* not included in the Mobile version */
+       }
+}
+
+
 
 
 
