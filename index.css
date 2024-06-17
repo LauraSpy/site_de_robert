@@ -9,18 +9,11 @@ body {
 
 header {
     background-color: white;
-    padding: 20px 140px;
+    padding: 2% 5%;
     position: fixed;
     z-index: 5;
-    width: 90vmax;
+    width: 100%;
     display: flex;
-}
-
-@media only screen and (max-width: 800px){
-    header {
-        padding: 20px 40px;
-        width: 50%;
-    }
 }
 
 .logo img {
@@ -42,16 +35,6 @@ header {
     align-items: center;
 }
 
-@media only screen and (max-width: 800px){
-    .logo {
-        gap: none;
-    }
-
-    .logo h2 {
-        display: none;
-    }
-}
-
 .navbar {
     display: flex;
     width: 100vmax;
@@ -59,14 +42,6 @@ header {
     gap: 2%;
     margin-right: 10%;
     align-items: center;
-}
-
-@media only screen and (max-width: 800px){
-    .navbar {
-        gap: 10px;
-        margin-right: 10%;
-        justify-content: flex-end;
-    }
 }
 
 @media only screen and (max-width: 400px){
@@ -77,7 +52,7 @@ header {
     }
 }
 
-/* Styles for the menu icon */
+/* Styles for the menu - burger - icon */
 .menu-icon {
     display: none; /* Hide the icon on larger screens */
     cursor: pointer;
@@ -102,30 +77,6 @@ header {
     font-size: 13px;
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 800px) {
-    .menu-icon {
-        display: block; /* Show the icon on smaller screens */
-        order: 3;
-        right: 0;
-    }
-
-    .menu {
-        display: none; /* Hide the menu links initially */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        margin-right: 10%;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-    }
-
-    .menu.active {
-        display: flex; /* Show the menu when active */
-    }
-}
 
 .navbar a {
     text-decoration: none;
@@ -206,12 +157,13 @@ header {
 #hero {
     background-color: #06D6A0;
     display: flex;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 140px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 14%;
     padding-bottom: 0;
-    margin-bottom: -60px;
-    gap: 40px;
+    margin-bottom: -6%;
+    gap: 3%;
+    width: 100%;
 }
 
 .hero_text {
@@ -220,7 +172,16 @@ header {
 
 .hero_image {
     width: 50%;
-    margin-left: -100px;
+    height: auto;
+    margin-left: -20%;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .hero_image {
+        width: 40%;
+        margin-left: -10%;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -331,11 +292,12 @@ header {
 }
 
 .qualirepar {
-    padding: 20px;
+    padding: 3%;
     background-color: #D9FFF5;
     border-radius: 16px;
     display: flex;
     flex-direction: row;
+    width: 70%;
 }
 
 .qualirepar img {
@@ -369,9 +331,9 @@ header {
 
 #chiffres {
     background-color: white;
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-top: -40px;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: -4%;
     padding: 40px 80px;
     border-radius: 16px;
     border: none;
@@ -381,7 +343,6 @@ header {
 
 @media only screen and (max-width: 800px){
     #chiffres{
-        overflow: hidden;
         margin: 0;
         padding: 20px 50px;
     }
@@ -592,11 +553,11 @@ header {
 
 @media only screen and (max-width: 800px){
     #testimony{
-        height: 70vh;
+        height: 100vh;
     }
 
     #testimony h2 {
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -632,7 +593,7 @@ header {
 
 @media only screen and (max-width: 800px){
     .testimony_avis {
-        height: 50vh;
+        height: 80vh;
         flex-direction: column;
     }
 
@@ -706,6 +667,7 @@ header {
         flex-direction: column;
         right: auto;
         width: 50%;
+        overflow-y: scroll;
     }
 }
 
@@ -753,7 +715,7 @@ header {
 
 @media only screen and (max-width: 800px){
     .info_text {
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -833,12 +795,14 @@ header {
 @media only screen and (max-width: 800px){
     .info_image img{
         height: auto;
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 400px){
     .info_image img{
         width: 100%;
+        height: auto;
     }
 }
 
@@ -1006,7 +970,54 @@ footer {
 }
 
 
-/* FORMULAIRE DE CONTACT - page annexe */
+/* Media query for smaller screens */
+
+@media only screen and (max-width: 800px) {
+    header {
+        padding: 20px 40px;
+        width: 100%;
+    }
+
+    .logo {
+        gap: none;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+    
+    .navbar {
+        gap: 10px;
+        margin-right: 10%;
+        justify-content: flex-end;
+    }
+
+    .menu-icon {
+        display: block; /* Show the icon on smaller screens */
+        order: 3;
+        right: 0;
+    }
+
+    .menu {
+        display: none; /* Hide the menu links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        margin-right: 10%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu when active */
+    }
+}
+
+
+
+/**** FORMULAIRE DE CONTACT - page annexe ****/
 
 #contact{
     background-color: #06D6A0;
