@@ -12,14 +12,14 @@ header {
     padding: 20px 140px;
     position: fixed;
     z-index: 5;
-    width: 100%;
+    width: 90vmax;
     display: flex;
-    justify-content: space-between;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     header {
         padding: 20px 40px;
+        width: 50%;
     }
 }
 
@@ -42,7 +42,7 @@ header {
     align-items: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .logo {
         gap: none;
     }
@@ -54,11 +54,22 @@ header {
 
 .navbar {
     display: flex;
-    gap: 30px;
-    width: 60rem;
+    width: 100vmax;
+    justify-content: flex-end;
+    gap: 2%;
+    margin-right: 10%;
+    align-items: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
+    .navbar {
+        gap: 10px;
+        margin-right: 10%;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 400px){
     .navbar {
         gap: 10px;
         margin-left: 3rem;
@@ -66,16 +77,21 @@ header {
     }
 }
 
-.navbar a {
-    text-decoration: none;
-    color: black;
+/* Styles for the menu icon */
+.menu-icon {
+    display: none; /* Hide the icon on larger screens */
+    cursor: pointer;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
 }
 
-.navbar ul {
+/* Styles for the menu links */
+.menu {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -86,10 +102,38 @@ header {
     font-size: 13px;
 }
 
-@media only screen and (max-width: 600px){
-    .navbar ul {
-        display: none;
+/* Media query for smaller screens */
+@media only screen and (max-width: 800px) {
+    .menu-icon {
+        display: block; /* Show the icon on smaller screens */
+        order: 3;
+        right: 0;
     }
+
+    .menu {
+        display: none; /* Hide the menu links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        margin-right: 10%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu when active */
+    }
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }
 
 .search, .navbar button {
@@ -126,6 +170,12 @@ header {
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 800px){
+    .navbar  button {
+        display: none;
+    }
+}
+
 .search {
     display: flex;
     background-color: none;
@@ -142,8 +192,8 @@ header {
     font-style: normal;
 }
 
-@media only screen and (max-width: 600px){
-    .search input {
+@media only screen and (max-width: 400px){
+    .search {
         display: none;
     }
 }
@@ -173,18 +223,42 @@ header {
     margin-left: -100px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #hero {
-        padding: 5rem 3rem;
         padding-top: 160px;
+        flex-direction: column;
+        width: 100vmax;
     }
 
     .hero_text{
         width: 100%;
     }
 
-    .hero_image{
-        display: none;
+    .hero_image {
+        margin-left: -10%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #hero {
+        padding-top: 160px;
+        padding-left: 15%;
+    }
+
+    .hero_text {
+        width: 35%;
+        font-size: smaller;
+    }
+
+    .hero_text .bold {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .hero_image {
+        margin-left: -50%;
+        margin-top: 10%;
+        transform: scale(120%);
     }
 }
 
@@ -281,6 +355,18 @@ header {
     font-style: normal;
 }
 
+@media only screen and (max-width: 800px){
+    .qualirepar {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .qualirepar {
+        display: none;
+    }
+}
+
 #chiffres {
     background-color: white;
     margin-left: 110px;
@@ -321,13 +407,31 @@ header {
     background-image: url(./images/fond_h1.svg);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #chiffres{
         overflow: hidden;
+        margin: 0;
+        padding: 20px 50px;
     }
 
+    .counter_list {
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .counter {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px){
     .counter_list{
-        animation: scroll 10s linear infinite;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .counter {
+        flex-direction: column;
     }
 }
 
@@ -422,9 +526,17 @@ header {
 #logo_brand{
     margin: 60px 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 30vh;
+}
+
+#logo_brand h3 {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 5%;
 }
 
 .carousel {

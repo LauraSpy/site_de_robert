@@ -1,3 +1,16 @@
+//MENU
+
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+//COMPTEUR
+
 (() => {
     const number = document.querySelectorAll('.number');
     // covert to array
@@ -95,3 +108,5 @@ document.getElementById('nextArrow').addEventListener('click', () => {
 });
 
 updateReview();
+
+
