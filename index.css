@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +6,7 @@
 
 body {
     width: 100vmax;
+    box-sizing: border-box;
 }
 
 /** PART : HEADER **/
@@ -18,6 +19,7 @@ header {
     left: 0;
     right: 0;
     display: flex;
+    width: 100vmax;
 }
 
 .logo img {
@@ -152,6 +154,7 @@ header {
     padding-bottom: 0;
     margin-bottom: -3%;
     gap: 10%;
+    box-sizing: border-box;
 }
 
 .hero_text {
@@ -287,6 +290,7 @@ header {
     position: relative;
     left: 0;
     right: 0;
+    box-sizing: border-box;
 }
 
 .counter_list {
@@ -324,6 +328,7 @@ header {
     background-color: #FEF1EF;
     margin-top: -120px;
     padding: 120px 120px 60px 120px;
+    box-sizing: border-box;
 }
 
 #categories h2 {
@@ -392,6 +397,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 30vh;
+    box-sizing: border-box;
 }
 
 #logo_brand h3 {
@@ -450,6 +456,7 @@ header {
     padding: 100px 120px;
     left: 0;
     right: 0;
+    box-sizing: border-box;
 }
 
 .testimony_avis {
@@ -562,6 +569,7 @@ header {
     display: flex;
     padding: 100px 120px;
     gap: 60px;
+    box-sizing: border-box;
 }
 
 .info_text p {
@@ -656,6 +664,7 @@ header {
 #services {
     background-color: #06D6A0;
     padding: 140px;
+    box-sizing: border-box;
 }
 
 .service_part h2{
@@ -755,6 +764,7 @@ footer {
     margin: auto;
     gap: 123px;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .footer_list {
@@ -785,6 +795,7 @@ footer {
 @media only screen and (max-width: 800px) {
     /* PART : HEADER */
     header {
+        width: 100vmax;
         padding: 20px 40px;
     }
 
@@ -964,14 +975,10 @@ footer {
 /* Media query for MOBILE screens */
 
 @media only screen and (max-width: 400px){
-    /* PART : HEADER */    
-    * {
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-
+    /* PART : HEADER */ 
     header {
-        width: 100vmax;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     .navbar {
@@ -988,7 +995,7 @@ footer {
     #hero {
         padding-top: 160px;
         padding-left: 15%;
-        width: 100%;
+        box-sizing: border-box;
     }
 
     .hero_text {
@@ -1002,9 +1009,15 @@ footer {
     }
 
     .hero_image {
-        margin-left: -40%;
-        margin-top: 10%;
-        transform: scale(120%);
+        width: fit-content;
+        margin-left: -20%;
+        margin-top: 20%;
+        transform: scale(150%);
+    }
+
+    .hero_image img {
+        width: 500px;
+        height: auto;
     }
 
     .qualirepar {
