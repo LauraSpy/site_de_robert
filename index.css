@@ -958,6 +958,9 @@ footer {
 
 @media only screen and (max-width: 400px){
     /* PART : HEADER */
+    header {
+        width: 50%;
+    }
     .navbar {
         gap: 10px;
         margin-left: 3rem;
