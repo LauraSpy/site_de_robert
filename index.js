@@ -1,15 +1,16 @@
-//MENU
+//MENU (burger) on small screens
 
 const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
 
+//toggle the BURGER MENU on click 
 menuIcon.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
 
 
-//COMPTEUR
+//COMPTEUR (on webpage loading, automatic)
 
 (() => {
     const number = document.querySelectorAll('.number');
@@ -35,7 +36,7 @@ menuIcon.addEventListener('click', () => {
 })()
 
 
-// Carrousel des avis
+// TESTIMONY TEXT : to change each text on click
 
 const reviews = [
     {
@@ -70,38 +71,42 @@ const reviews = [
     }
 ];
 
-let currentReviewIndex = 0;
+let currentReviewIndex = 0; //initialize the first review
 
+// remake the structure of each testimony question writtent in the HTML
 const problematiqueText = document.getElementById('problematiqueText');
 const reparationText = document.getElementById('reparationText');
 const resultatText = document.getElementById('resultatText');
 const nomAvis = document.getElementById('nomAvis');
 const images = document.querySelectorAll('.image_testimony img');
 
+// create a function to change the review on click
 function updateReview() {
-    const review = reviews[currentReviewIndex];
+    const review = reviews[currentReviewIndex]; //look for the current slide
     problematiqueText.textContent = review.problematique;
     reparationText.textContent = review.reparation;
     resultatText.textContent = review.resultat;
     nomAvis.textContent = review.nom;
 
-    // Mettre à jour les indicateurs
+    // MAJ for Indicators
     const indicators = document.querySelectorAll('.carousel__indicator');
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle('current-slide', index === currentReviewIndex);
     });
 
-    // Mettre à jour l'image
+    // MAJ of the image
     images.forEach((image, index) => {
         image.classList.toggle('hidden', index !== currentReviewIndex);
     });
 }
 
+// add the action when click on left arrow
 document.getElementById('prevArrow').addEventListener('click', () => {
     currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
     updateReview();
 });
 
+// add the action when click on right arrow
 document.getElementById('nextArrow').addEventListener('click', () => {
     currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
     updateReview();
