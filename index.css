@@ -968,7 +968,7 @@ footer {
 @media only screen and (max-width: 400px){
     /* PART : HEADER */ 
     .navbar {
-        width: 50%;
+        width: 40%;
     }
 
     .button {
