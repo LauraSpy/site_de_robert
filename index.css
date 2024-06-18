@@ -806,7 +806,7 @@ footer {
         justify-content: flex-end;
     }
 
-    .navbar a {
+    .button {
         display: none;
     }
 
@@ -829,6 +829,7 @@ footer {
 
     .menu.active {
         display: flex; /* Show the menu when active */
+        margin-right: 10%;
     }
 
     /* PART : HERO */
@@ -966,12 +967,17 @@ footer {
 
 @media only screen and (max-width: 400px){
     /* PART : HEADER */ 
-    .navbar a {
+    .navbar {
+        width: 50%;
+    }
+
+    .button {
         display: none;
     }
 
     .menu.active {
         display: flex; /* Show the menu when active */
+        margin-right: 40%;
     }
 
     .search {
