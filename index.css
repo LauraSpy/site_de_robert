@@ -964,9 +964,14 @@ footer {
 /* Media query for MOBILE screens */
 
 @media only screen and (max-width: 400px){
+    body {
+        width: 62%;
+    }
+
     /* PART : HEADER */ 
     header {
         width: 100%;
+        overflow: hidden;
     }
 
     .button {
@@ -983,19 +988,32 @@ footer {
     }
 
     /* PART : HERO */
+    #showcase {
+        overflow: hidden;
+        width: 160%;
+    }
+
+    #hero {
+        padding-top: 40%;
+        overflow: hidden;
+    }
+
     .hero_text .bold {
         font-size: larger;
         font-weight: bold;
     }
 
+    .hero_text {
+        width: 80%;
+    }
+
     .hero_image {
-        width: fit-content;
-        margin-left: -20%;
-        margin-top: 20%;
+        margin-left: -80%;
+        margin-bottom: -45%;
     }
 
     .hero_image img {
-        width: 500px;
+        width: 800px;
         height: auto;
     }
 
@@ -1004,13 +1022,20 @@ footer {
     }
 
     /* PART : NUMBERS */
+    #chiffres {
+        border-radius: 0;
+        overflow: hidden;
+    }
+
     .counter_list{
         display: flex;
         flex-direction: column;
     }
 
-    .counter {
-        flex-direction: column;
+    /* CATEGORIES */
+    #categories {
+        width: 160%;
+        overflow: hidden;
     }
 
     /* PART : TESTIMONY */
@@ -1019,6 +1044,11 @@ footer {
     }
 
     /* PART : INFORMATION */
+    #info {
+        width: 160%;
+        overflow: hidden;
+    }
+
     .mobile_first {
         display: none; /* withdraw the last 2 paragraphs on the mobile version */
     }
@@ -1032,6 +1062,19 @@ footer {
     .second_counter {
         display: none; /* not included in the Mobile version */
        }
+
+    /* SERVICES */
+    #services {
+        width: 160%;
+        overflow: hidden;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 160%;
+        overflow: hidden;
+        margin: 0;
+    }
 }
 
 
