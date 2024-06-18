@@ -125,7 +125,6 @@ header {
 
 .search {
     display: flex;
-    background-color: none;
     border: solid #FFA068 1px;
     gap: 20px;
     align-items: center;
@@ -792,10 +791,6 @@ footer {
     header {
         width: 100vmax;
         padding: 20px 40px;
-    }
-
-    .logo {
-        gap: none;
     }
 
     .logo h2 {
