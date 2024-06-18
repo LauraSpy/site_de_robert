@@ -980,7 +980,8 @@ footer {
 
     .menu.active {
         display: flex; /* Show the menu when active */
-        margin-right: 40%;
+        margin-right: 10%;
+        position: absolute;
     }
 
     .search {
@@ -1067,6 +1068,10 @@ footer {
     #services {
         width: 160%;
         overflow: hidden;
+    }
+
+    .service_box {
+        width: 100%;
     }
 
     /* FOOTER */
