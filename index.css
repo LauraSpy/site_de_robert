@@ -86,39 +86,37 @@ header {
     text-decoration: underline; /* add the under-line on hover */
 }
 
-.search, .navbar button {
+.search, .button {
     padding: 6px 20px;
     border-radius: 8px;
 }
 
 /* styles the button */
-.navbar button {
+.button {
+    display: flex;
     width: 160px;
     height: 40px;
-    border: none;
     box-shadow: 2px 4px 10px rgb(206, 206, 206);
-    color: black;
     background-color: #FFA068;
-    font-weight: bold;
     font-family: "Tomorrow", sans-serif;
     font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
     font-style: normal;
     transition: ease-in-out 0.2s;
 }
  
 /* style the button on hover */
-.navbar button:hover {
+.button:hover {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-}
-
-.navbar button a:hover{
     text-decoration: none; /* no under-line on the link */
 }
 
 /* while the cursor is on */
-.navbar button:active {
+.button:active {
     transform: translateY(1px);
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
@@ -257,6 +255,9 @@ header {
     display: flex;
     flex-direction: row;
     width: 70%;
+    margin-top: 10%;
+    gap: 5%;
+    align-items: center;
 }
 
 .qualirepar img {
