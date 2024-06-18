@@ -112,7 +112,6 @@ header {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-    text-decoration: none; /* no under-line on the link */
 }
 
 /* while the cursor is on */
