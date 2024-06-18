@@ -77,12 +77,12 @@ header {
     font-size: 13px;
 }
 
-.navbar a {
+.navbar li > a {
     text-decoration: none; /* no under-line on the links */
     color: black;
 }
 
-.navbar a:hover {
+.navbar li > a:hover {
     text-decoration: underline; /* add the under-line on hover */
 }
 
@@ -105,6 +105,11 @@ header {
     align-items: center;
     font-style: normal;
     transition: ease-in-out 0.2s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
 }
  
 /* style the button on hover */
@@ -803,14 +808,13 @@ footer {
         justify-content: flex-end;
     }
 
-    .navbar  button {
+    .navbar a {
         display: none;
     }
 
     .menu-icon {
         display: block; /* Show the icon on smaller screens */
         order: 3;
-        right: 0;
     }
 
     .menu {
@@ -966,8 +970,12 @@ footer {
 
 @media only screen and (max-width: 400px){
     /* PART : HEADER */ 
-    .navbar {
-        gap: 10px;
+    .navbar a {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu when active */
     }
 
     .search {
