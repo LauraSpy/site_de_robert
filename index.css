@@ -990,10 +990,6 @@ footer {
     }
 
     /* PART : HERO */
-    #hero {
-        padding-left: -10%;
-    }
-
     .hero_text .bold {
         font-size: larger;
         font-weight: bold;
@@ -1003,7 +999,6 @@ footer {
         width: fit-content;
         margin-left: -20%;
         margin-top: 20%;
-        transform: scale(150%);
     }
 
     .hero_image img {
