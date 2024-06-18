@@ -21,7 +21,7 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    width: 100vmax;
+    width: 100%;
 }
 
 .logo img {
@@ -169,6 +169,11 @@ header {
     width: 50%;
     height: auto;
     margin-left: -20%;
+}
+
+.hero_image img {
+    width: auto;
+    height: 100%;
 }
 
 /* correction for smaller full-screen */
@@ -792,7 +797,7 @@ footer {
 @media only screen and (max-width: 800px) {
     /* PART : HEADER */
     header {
-        width: 100vmax;
+        width: 100%;
         padding: 20px 40px;
     }
 
