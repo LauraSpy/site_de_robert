@@ -198,7 +198,7 @@ header {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-.hero_text button a{
+.hero_text a{
     color: black;
     text-decoration: none;
 }
@@ -415,7 +415,6 @@ header {
     width: 100%; 
     height: auto;
     border: none;
-    position: relative; 
 }
 
 .carousel-container {
@@ -456,21 +455,19 @@ header {
     font-style: normal;
     font-size: 1.6em;
     padding: 100px 120px;
-    left: 0;
-    right: 0;
     box-sizing: border-box;
 }
 
 .testimony_avis {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .image_testimony {
     margin-top: 3rem;
     position: relative; /* make sure the image stayed behind the testimony text-box */
-    left: -18%; /* position the image on the left of the testimony text-box */
 }
 
 /* style the image of the testimony */
@@ -493,20 +490,16 @@ header {
 /* style for the button carrousel */
 .button_dot {
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .carousel_arrow {
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50%;
-    border: solid #FFA068 1px;
     color: #FFA068;
     margin: 1rem;
-    padding: 5px;
-    font-size: 15px;
-    height: 30px;
     width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -978,15 +971,8 @@ footer {
 
 @media only screen and (max-width: 400px){
     /* PART : HEADER */ 
-    header {
-        box-sizing: border-box;
-        width: 100%;
-    }
-
     .navbar {
         gap: 10px;
-        margin-left: 3rem;
-        padding-right: 8rem;
     }
 
     .search {
@@ -995,14 +981,7 @@ footer {
 
     /* PART : HERO */
     #hero {
-        padding-top: 160px;
-        padding-left: 15%;
-        box-sizing: border-box;
-    }
-
-    .hero_text {
-        width: 35%;
-        font-size: smaller;
+        padding-left: -10%;
     }
 
     .hero_text .bold {

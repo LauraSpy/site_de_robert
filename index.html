@@ -52,7 +52,9 @@
                 <h1><span class="bold">Cassé ?</span><br> Nous le réparons !</h1>
                 <p>C'est moins cher et plus écologique</p>
                 <!-- CTA -->
-                <button type="button"><a href="/page_contact.html#contact">Contactez-nous</a></button>
+                <a href="/page_contact.html#contact">
+                    <button type="button">Contactez-nous</button>
+                </a>
                 <!-- LABEL QUALIREPAR -->
                 <div class="qualirepar">
                     <div class="qualirepar_box">
@@ -65,7 +67,7 @@
             </div>
             <!-- image HERO -->
             <div class="hero_image">
-                <img src="./images/hero.png" alt="">
+                <img src="./images/hero.png" alt="dirigeant">
             </div>
         </div>
         <div id="chiffres">
@@ -90,15 +92,15 @@
         <h2>Que souhaitez-vous réparer ?</h2>
         <div class="categorie_list">
             <div class="categorie"><a href="/page_contact.html#contact">
-                <img src="./images/grillepain.png" alt="" srcset="">
+                <img src="./images/grillepain.png" alt="grillepain">
                 <h3>Petit Electroménager</h3></a>
             </div>
             <div class="categorie"><a href="/page_contact.html#contact">
-                <img src="./images/aspirateur.png" alt="" srcset="">
+                <img src="./images/aspirateur.png" alt="aspirateur">
                 <h3>Moyen Electroménager</h3></a>
             </div>
             <div class="categorie"><a href="/page_contact.html#contact">
-                <img src="./images/machinealaver.png" alt="" srcset="">
+                <img src="./images/machinealaver.png" alt="machinealaver">
                 <h3>Gros Electroménager</h3></a>
             </div>
         </div>
@@ -145,21 +147,20 @@
                 <div class="image_case">
                     <img src="https://cdn-abhgc.nitrocdn.com/tyJLQPlyhBXItjeLAyrrLplRUFFlgsyP/assets/images/optimized/rev-053db9c/www.coffeeness.de/wp-content/uploads/2021/04/jura-z10-kaffeevollautomat-arne-gluecklich.jpg" alt="avisimage5" border="0" class="hidden">
                 </div>
-        
-                <div class="button_dot">
-                    <!-- button to click -->
-                    <button class="carousel_arrow" id="prevArrow"><</button>
-                    <!-- The carousel button, not clickable -->
-                    <div class="carousel__nav">
-                        <button class="carousel__indicator current-slide"></button>
-                        <button class="carousel__indicator"></button>
-                        <button class="carousel__indicator"></button>
-                        <button class="carousel__indicator"></button>
-                        <button class="carousel__indicator"></button>
-                    </div>
-                    <!-- button to click -->
-                    <button class="carousel_arrow" id="nextArrow">></button>
+            </div>
+            <div class="button_dot">
+                <!-- button to click -->
+                <input type="image" class="carousel_arrow" id="prevArrow" src="./images/chevron-circle-left.svg" alt="left arrow">
+                <!-- The carousel button, not clickable -->
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
                 </div>
+                <!-- button to click -->
+                <input type="image" class="carousel_arrow" id="nextArrow" src="./images/chevron-circle-right.svg" alt="left arrow">
             </div>
             <!-- Part where the testimony text is placed -->
             <div class="testimony_box">
@@ -189,12 +190,13 @@
         <div class="info_text">
             <h2>Pourquoi réparer'tou ?</h2>
             <p>Chez Réparer’tou, nous nous engageons à prolonger la durée de vie de vos appareils électroménagers et à favoriser le recyclage pour un avenir durable. <br>
-            <span class="mobile_first"><br>
-                <!-- This class select 2 paragraps that will hide if the screens is too small -->
-                En réparant plutôt qu'en remplaçant, nous réduisons les déchets électroniques et soutenons l'économie circulaire. Nos techniciens qualifiés utilisent les dernières technologies pour offrir des réparations fiables, tout en sensibilisant nos clients à l'entretien préventif et aux avantages écologiques de la réparation.<br>
-                <br>
-                Avec un service client exceptionnel et une transparence totale, nous contribuons positivement à notre communauté locale et œuvrons ensemble pour un monde plus vert.
-            </p></span>
+                <span class="mobile_first"><br>
+                    <!-- This class select 2 paragraps that will hide if the screens is too small -->
+                    En réparant plutôt qu'en remplaçant, nous réduisons les déchets électroniques et soutenons l'économie circulaire. Nos techniciens qualifiés utilisent les dernières technologies pour offrir des réparations fiables, tout en sensibilisant nos clients à l'entretien préventif et aux avantages écologiques de la réparation.<br>
+                    <br>
+                    Avec un service client exceptionnel et une transparence totale, nous contribuons positivement à notre communauté locale et œuvrons ensemble pour un monde plus vert.
+                </span>
+            </p>
             <!-- the popup part -->
             <button type="button" class="tooltip" data-tooltip="Cliquez pour télécharger le PDF">Découvrir notre Manifeste</button>
         </div>
@@ -218,7 +220,7 @@
                     <!-- add a link the contact form -->
                     <a href="/page_contact.html#contact">
                         <div class="logo_svg">
-                            <img src="./images/localisation.svg" alt="">
+                            <img src="./images/localisation.svg" alt="localisation">
                         </div>
                         <div class="service_box_text">
                             <h3>Rendez-vous en boutique</h3>
@@ -230,7 +232,7 @@
                     <!-- add a link the contact form -->
                     <a href="/page_contact.html#contact">
                         <div class="logo_svg">
-                            <img src="./images/tools.svg" alt="">
+                            <img src="./images/tools.svg" alt="tools">
                         </div>
                         <div class="service_box_text">
                             <h3>Réparer soi-même</h3>
@@ -242,7 +244,7 @@
                     <!-- add a link the contact form -->
                     <a href="/page_contact.html#contact">
                         <div class="logo_svg">
-                            <img src="./images/gift.svg" alt="">
+                            <img src="./images/gift.svg" alt="gift">
                         </div>
                         <div class="service_box_text">
                             <h3>Donner mon appareil</h3>
