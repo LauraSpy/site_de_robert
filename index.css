@@ -218,7 +218,6 @@ header {
 .hero_text h1{
     font-size: 3.2em;
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     line-height: 1.2em;
@@ -325,7 +324,6 @@ header {
 
 .number, .number2 {
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
@@ -344,7 +342,6 @@ header {
 
 #categories h2 {
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 45px;
@@ -363,7 +360,6 @@ header {
     border-radius: 16px;
     text-align: center;
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.5em;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
@@ -460,7 +456,6 @@ header {
 #testimony {
     background-color: #D9FFF5;
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.6em;
     padding: 100px 120px;
@@ -583,7 +578,6 @@ header {
 
 .info_text h2{
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-size: 35px;
     margin-bottom: 30px;
@@ -671,7 +665,6 @@ header {
 
 .service_part h2{
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-size: 35px;
     margin-bottom: 20px;
@@ -1058,7 +1051,6 @@ footer {
 
 #contact h1{
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     padding-bottom: 2rem;
 }
@@ -1118,7 +1110,6 @@ footer {
     display: flex;
     justify-content: center;
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 700;
     font-size: 1.2em;
