@@ -466,7 +466,7 @@ header {
 .testimony_avis {
     display: flex;
     flex-direction: column;
-    align-items: flexs-tart;
+    align-items: flex-start;
     justify-content: center;
 }
 
