@@ -950,7 +950,7 @@ footer {
         flex-direction: column;
         right: auto; 
         width: 50%;
-        overflow-y: hidden; /* if the box is a bit too short, the scrool is available */
+        overflow-y: hidden; /* no scroll */
     }
 
     /* PART : INFORMATION */
