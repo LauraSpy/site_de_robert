@@ -466,7 +466,7 @@ header {
 .testimony_avis {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flexs-tart;
     justify-content: center;
 }
 
@@ -928,6 +928,7 @@ footer {
 
     .testimony_avis {
         width: 50vmax;
+        align-items: center;
     }
 
     .image_testimony {
