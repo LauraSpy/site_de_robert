@@ -939,6 +939,11 @@ footer {
         display: none; /* image not included in the smaller screen */
     }
 
+    .button_dot {
+        transform: scale(1.5);
+        margin: auto;
+    }
+
     .testimony_box{
         display: flex;
         flex-direction: column;
@@ -995,7 +1000,7 @@ footer {
 
 /* Media query for MOBILE screens */
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 450px){
     body {
         width: 62%;
     }
