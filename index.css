@@ -1053,9 +1053,15 @@ footer {
         display: none;
     }
 
+    /* LOGO BRAND */
     #logo_brand {
         margin-left: -20%;
         margin-right: -20%;
+    }
+
+    #logo_brand h3 {
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     /* PART : NUMBERS */
