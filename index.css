@@ -916,7 +916,8 @@ footer {
     #testimony {
         display: flex;
         flex-direction: column;
-        height: 120%;
+        align-items: center;
+        height: 100%;
         width: 150%;
         overflow-x: hidden;
     }
@@ -931,7 +932,7 @@ footer {
 
     .image_testimony {
         display: flex;
-        height: 75vh;
+        height: 35rem;
         width: 90vmax;
     }
 
@@ -949,7 +950,7 @@ footer {
         flex-direction: column;
         right: auto; 
         width: 50%;
-        overflow-y: scroll; /* if the box is a bit too short, the scrool is available */
+        overflow-y: hidden; /* if the box is a bit too short, the scrool is available */
     }
 
     /* PART : INFORMATION */
