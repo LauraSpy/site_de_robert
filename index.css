@@ -840,7 +840,7 @@ footer {
 
     #hero {
         width: 100%;
-        padding-top: 30%;
+        padding-top: 23%;
         flex-direction: column;
         overflow-x: hidden;
     }
@@ -853,6 +853,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         margin-left: -20%;
+        margin-top: 5%;
     }
 
     .hero_image img {
@@ -861,8 +862,7 @@ footer {
     }
 
     .qualirepar {
-        width: 70%;
-        height: auto;
+        margin-top: 5%;
     }
 
     /* PART : NUMBERS */
