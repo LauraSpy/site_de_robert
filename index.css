@@ -1053,6 +1053,11 @@ footer {
         display: none;
     }
 
+    #logo_brand {
+        margin-left: -20%;
+        margin-right: -20%;
+    }
+
     /* PART : NUMBERS */
     #chiffres {
         border-radius: 0;
