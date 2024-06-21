@@ -7,8 +7,8 @@
 }
 
 body {
-    width: 100vmax;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /** PART : HEADER **/
@@ -176,14 +176,6 @@ header {
     height: 100%;
 }
 
-/* correction for smaller full-screen */
-@media only screen and (max-width: 1000px){
-    .hero_image {
-        width: 40%;
-        margin-left: -10%;
-    }
-}
-
 .hero_text button {
     width: 160px;
     height: 40px;
@@ -306,8 +298,8 @@ header {
 .counter_list {
     display: flex;
     gap: 20px;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .counter {
@@ -351,6 +343,8 @@ header {
 .categorie_list {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .categorie {
@@ -460,7 +454,7 @@ header {
     font-size: 1.6em;
     padding: 100px 120px;
     box-sizing: border-box;
-    height: 110vh;
+    height: 100%;
 }
 
 .testimony_avis {
@@ -471,7 +465,8 @@ header {
 }
 
 .image_testimony {
-    margin-top: 8%;
+    margin-top: 7%;
+    margin-left: 15%;
     position: relative; /* make sure the image stayed behind the testimony text-box */
 }
 
@@ -495,6 +490,7 @@ header {
 /* style for the button carrousel */
 .button_dot {
     display: flex;
+    margin-left: 15%;
 }
 
 .carousel_arrow {
@@ -567,6 +563,7 @@ header {
     padding: 100px 120px;
     gap: 60px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .info_text p {
@@ -661,6 +658,7 @@ header {
     background-color: #06D6A0;
     padding: 140px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .service_part h2{
@@ -760,6 +758,7 @@ footer {
     gap: 123px;
     justify-content: space-around;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .footer_list {
@@ -785,9 +784,39 @@ footer {
 }
 
 
-/* Media query for smaller screens */
+/* correction for smaller full-screen */
+@media only screen and (max-width: 1050px){
 
-@media only screen and (max-width: 800px) {
+    .logo h2 {
+        display: none;
+    }
+
+    /* HERO */
+    .hero_text h1 {
+        font-size: 3em;
+    }
+    .hero_image {
+        width: 100%;
+        margin-left: -10%;
+    }
+
+    .qualirepar {
+        width: 130%;
+    }
+
+    .counter {
+        flex-direction: column;
+    } 
+
+    .image_testimony, .button_dot {
+        margin-left: 0;
+        margin-top: 8%;
+    }
+}
+
+/* Media query for tablet screens */
+
+@media only screen and (max-width: 840px) {
     body {
         width: 70%;
         overflow-x: hidden;
@@ -834,7 +863,6 @@ footer {
 
     /* PART : HERO */
     #showcase {
-        overflow-x: hidden;
         width: 150%;
     }
 
@@ -842,7 +870,6 @@ footer {
         width: 100%;
         padding-top: 23%;
         flex-direction: column;
-        overflow-x: hidden;
     }
 
     .hero_text{
@@ -863,6 +890,13 @@ footer {
 
     .qualirepar {
         margin-top: 5%;
+        width: 60%;
+    }
+
+    @media only screen and (max-width: 680px) {
+        .qualirepar {
+            width: 40%;
+        }
     }
 
     /* PART : NUMBERS */
@@ -1002,7 +1036,7 @@ footer {
 
 /* Media query for MOBILE screens */
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 500px){
     body {
         width: 62%;
     }
