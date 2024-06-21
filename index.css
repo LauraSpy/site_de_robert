@@ -151,7 +151,7 @@ header {
 #hero {
     background-color: #06D6A0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 14%;
